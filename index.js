@@ -18,7 +18,7 @@ app.set('views', path.join(__dirname, 'views'));
 hbs.registerPartials(path.join(__dirname, 'views/partials'));
 
 //Configurar las Rutas de mi aplicación
-app.use('/api/productos', require('./routes/productos'));
+app.use('/api/message', require('./routers/productos'));
 //app.use('/api/clientes', require('./routes/clientes'));
 
 app.get('/', (req, res) => {
